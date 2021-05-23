@@ -6,6 +6,7 @@ import string
 from collections import defaultdict
 import networkx as nx
 
+
 graph_pro = nx.DiGraph()
 
 activities = list(string.ascii_uppercase)[:10]
@@ -51,6 +52,8 @@ G = nx.DiGraph()
 for node in nodes:
     print(node)
     graph[node.name] = node.required
+
+
 
 G.add_nodes_from(activities)
 print(graph)
